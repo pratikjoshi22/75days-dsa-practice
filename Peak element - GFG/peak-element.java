@@ -48,20 +48,38 @@ class Solution
     {
         
         
-        int count =0;
-        for(int i=0;i<n-1;i++)
+        // int count =0;
+        // for(int i=0;i<n-1;i++)
+        // {
+        //     if(arr[i]<arr[i+1])
+        //     {
+        //       count=Math.max(count,i+1);
+        //     }
+            
+            
+            
+            
+            
+        // }
+        // return count;
+        int s=0;
+        int e=n-1;
+        int i=0;
+        while(s<e)
         {
-            if(arr[i]<arr[i+1])
+            if(arr[s]>arr[e])
             {
-               count=Math.max(count,i+1);
+                i=s;
+                e--;
             }
-            
-            
-            
-            
-            
+            else
+            {
+                i=e;
+                s++;
+                
+            }
         }
-        return count;
+        return i;
         
         
         
