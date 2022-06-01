@@ -60,39 +60,25 @@ class Compute
 {
     static pair getMinMax(long a[], long n)  
     {
-        long min = a[0],max=a[0];
-        pair minmax = new pair(min,max);
-
-        if(n==1)
-        {
-            minmax.second = a[0];
-            minmax.first = a[1];
-        }
-        if(a[0] > a[1])
-        {
-            minmax.second = a[0];
-            minmax.first = a[1];
-            
-        }
-        else
-        {
-            minmax.second = a[1];
-            minmax.first = a[0];
-        }
+        //Write your code here
+   
+        long min = a[0];
+        long max = a[0];
         
-        for(int i = 2; i < n; i++)
+        
+        for(int i=0;i<n;i++)
         {
-            if(a[i]>minmax.second)
+            if(a[i]>max)
             {
-                minmax.second = a[i];
-                
+                max=a[i];
             }
-            else if(a[i] < minmax.first)
+            else if(a[i]<min)
             {
-                minmax.first = a[i];
+                min=a[i];
             }
-            
         }
-        return minmax;
+        return new pair(min,max);
+       
+       
     }
 }
