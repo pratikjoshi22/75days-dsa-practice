@@ -42,6 +42,7 @@ class GFG {
 		    {
 		        arr[j]=sc.nextInt();
 		    }
+		    
 		    int temp;
 		    int s=0;
 		    int e=n-1;
@@ -54,11 +55,11 @@ class GFG {
 		        s++;
 		        e--;
 		    }
-		 for(int a=0;a<n;a++)
-         {
-             System.out.print(arr[a]+" ");
-         }
-         System.out.println("");
+    		 for(int a=0;a<n;a++)
+             {
+                 System.out.print(arr[a]+" ");
+             }
+             System.out.println("");
 		   
 		 
 		  
