@@ -61,7 +61,7 @@ class Compute
     static pair getMinMax(long a[], long n)  
     {
         long min = a[0],max=a[0];
-        pair minmax = new pair(max,min);
+        pair minmax = new pair(min,max);
 
         if(n==1)
         {
