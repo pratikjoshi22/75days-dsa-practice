@@ -9,7 +9,7 @@ class Solution {
             count =0;
             for(int j = 0;j<n;j++)
             {
-                if(nums[j] < nums[i] && j!=i)
+                if(nums[j] < nums[i] )
                 {
                     count++;
                    
